@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ItemHub - Next.js 16 Product Management App
 
-## Getting Started
+A beginner-friendly product management application built with Next.js 16 (App Router) using JavaScript (.jsx files).
 
-First, run the development server:
+## 🌟 Features
 
+### ✅ Core Features
+1. **Landing Page** - 7 beautifully designed sections
+   - Hero section with call-to-action
+   - Features showcase
+   - Categories grid
+   - How It Works steps
+   - Statistics display
+   - Customer testimonials
+   - Final CTA section
+
+2. **Authentication System**
+   - Mock login with hardcoded credentials
+   - Cookie-based session management
+   - Protected routes for unauthorized users
+   - Automatic redirect to login when accessing protected pages
+
+3. **Items List Page**
+   - Browse all products
+   - Responsive grid layout
+   - Item cards with key information
+
+4. **Item Details Page**
+   - Complete product information
+   - Add to cart functionality
+
+5. **Add Item Page (Protected)**
+   - Form to add new products
+   - Image URL input with preview
+   - Category selection
+   - Stock management
+   - Toast notifications
+
+### 🚀 Additional Features
+- Responsive design (mobile, tablet, desktop)
+- Toast notifications for user feedback
+- Loading states and error handling
+- Clean, modern UI with Tailwind CSS
+- Interactive components with hover effects
+- SEO optimized with proper metadata
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 16 (App Router)
+- **Language**: JavaScript (ES6+)
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Notifications**: React Hot Toast
+- **Routing**: Next.js App Router
+
+## 📦 Installation & Setup
+
+### 1. Clone and Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone the repository
+git clone <repository-url>
+cd nextjs-item-app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Install dependencies
+npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🔐 Login Credentials
+Use these credentials to login:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Email: admin@example.com
+Password: 123456
 
-## Learn More
+## Routes Summary
 
-To learn more about Next.js, take a look at the following resources:
+| Route         | Access    | Description                                  |
+| ------------- | --------- | -------------------------------------------- |
+| `/`           | Public    | Landing page with 7 sections                 |
+| `/items`      | Public    | List of all products                         |
+| `/items/[id]` | Public    | Detailed view of a single product            |
+| `/login`      | Public    | Login page for authentication                |
+| `/add-item`   | Protected | Add a new product (authenticated users only) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
