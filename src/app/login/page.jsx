@@ -12,7 +12,7 @@ export default function LoginPage() {
 
     if (email === "admin@example.com" && password === "123456") {
       document.cookie = "auth=true; path=/";
-      router.push("/login");
+      router.push("/items");
     } else {
       alert("Invalid Credentials");
     }

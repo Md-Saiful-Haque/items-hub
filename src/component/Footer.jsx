@@ -7,7 +7,7 @@ export default function Footer() {
 
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-3">MyShop</h2>
+          <h2 className="text-2xl font-bold text-white mb-3">ItemHub</h2>
           <p className="text-sm">
             A simple product listing application built with Next.js & Express.
           </p>
@@ -35,7 +35,7 @@ export default function Footer() {
         {/* Contact */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
-          <p className="text-sm">Email: support@myshop.com</p>
+          <p className="text-sm">Email: support@item-hub.com</p>
           <p className="text-sm">Phone: +880 1234 567890</p>
           <p className="text-sm">Dhaka, Bangladesh</p>
         </div>
