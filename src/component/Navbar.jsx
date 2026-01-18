@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="space-x-6">
         <Link href="/" className="hover:text-gray-300">Home</Link>
         <Link href="/items" className="hover:text-gray-300">Items</Link>
-        <Link href="/login" className="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">
+        <Link href="/login" className="bg-[#2b7fff] px-4 py-2 rounded hover:bg-blue-600 text-white">
           Login
         </Link>
       </div>

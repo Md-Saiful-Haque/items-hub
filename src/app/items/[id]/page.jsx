@@ -11,7 +11,7 @@ export default function ItemDetails() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://localhost:5000/items/${id}`)
+    fetch(`https://items-hub-backend.vercel.app/api/${id}`)
       .then(res => res.json())
       .then(data => setItem(data));
   }, [id]);

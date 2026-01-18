@@ -53,18 +53,7 @@ A beginner-friendly product management application built with Next.js 16 (App Ro
 - **Notifications**: React Hot Toast
 - **Routing**: Next.js App Router
 
-## 📦 Installation & Setup
-
-### 1. Clone and Install
-```bash
-# Clone the repository
-git clone <repository-url>
-cd nextjs-item-app
-
-# Install dependencies
-npm install
-
-🔐 Login Credentials
+## 🔐 Login Credentials
 Use these credentials to login:
 
 Email: admin@example.com
@@ -79,5 +68,18 @@ Password: 123456
 | `/items/[id]` | Public    | Detailed view of a single product            |
 | `/login`      | Public    | Login page for authentication                |
 | `/add-item`   | Protected | Add a new product (authenticated users only) |
+
+
+## 📦 Installation & Setup
+
+### 1. Clone and Install
+```bash
+# Clone the repository
+git clone <repository-url>
+cd nextjs-item-app
+
+# Install dependencies
+npm install
+
 
 

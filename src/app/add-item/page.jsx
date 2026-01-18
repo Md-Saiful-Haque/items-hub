@@ -4,7 +4,7 @@ export default function AddItem() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("http://localhost:5000/items", {
+    fetch("https://items-hub-backend.vercel.app/api/items", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

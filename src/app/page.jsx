@@ -8,7 +8,7 @@ export default function HomePage() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/items")
+    fetch("https://items-hub-backend.vercel.app/api/items")
       .then(res => res.json())
       .then(data => setItems(data.slice(0, 3)));
   }, []);
@@ -17,7 +17,7 @@ export default function HomePage() {
     <main className="bg-gray-50">
 
       {/* 1️⃣ HERO – PRODUCT FOCUSED */}
-      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-28">
+      <section className="bg-linear-to-r from-indigo-600 to-purple-600 text-white py-28">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-extrabold mb-6">
             Shop Quality Products You’ll Love
@@ -178,7 +178,7 @@ export default function HomePage() {
       </section>
 
       {/* 7️⃣ FINAL CTA */}
-      <section className="py-20 bg-indigo-600 text-white">
+      <section className="py-20 bg-[#2b7fff] text-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Start Shopping Today
